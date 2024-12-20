@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="github-removebg-preview.png" alt="GitHub Logo" class="header-image">
+        </div>
+        <h1>Search GitHub User</h1>
+        <div id="searchForm">
+            <input type="text" id="usernameInput" placeholder="Enter GitHub Username" />
+            <button id="searchButton" onclick="getUserInfo()">Search</button>
+        </div>
+
+        <div id="userInfo">
+            <div id="userImageWrapper">
+                <img id="avatar" src="" alt="User Avatar" />
+            </div>
+            <h2 id="name">No Name Available</h2>
+            <p id="bio">No bio available</p>
+            <p class="info"><strong>Public Repositories:</strong> <span id="repos">0</span></p>
+            <p class="info"><strong>Followers:</strong> <span id="followers">0</span></p>
+        </div>
+
+        <p class="error" id="errorMessage"></p>
+        <p class="note">Powered by GitHub API</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
